@@ -5,3 +5,9 @@ Jan 29 2020 (Wednesday):
   
 Feb 5 2020 
   - We learned about Computional thinking
+    + Show on the development part
+      * Decompose
+      * Pattern Recognize
+      * Abstraction
+      * Algorithm 
+  
