@@ -10,4 +10,5 @@ Feb 5 2020
       * Pattern Recognize
       * Abstraction
       * Algorithm 
+  - I will be developing the inventory system of the food 
   
