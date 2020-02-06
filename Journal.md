@@ -6,9 +6,9 @@ Jan 29 2020 (Wednesday):
 Feb 5 2020 
   - We learned about Computional thinking
     + Show on the development part
-      * Decompose
-      * Pattern Recognize
-      * Abstraction
-      * Algorithm 
+      * Decompose: breaking down a complex problem or system into smaller, more manageable parts
+      * Pattern Recognize: looking for similarities among and within problems
+      * Abstraction: focusing on the important information only, ignoring irrelevant detail
+      * Algorithm: developing a step-by-step solution to the problem, or the rules to follow to solve the problem
   - I will be developing the inventory system of the food 
   
