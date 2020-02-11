@@ -11,4 +11,10 @@ Feb 5 2020
       * Abstraction: focusing on the important information only, ignoring irrelevant detail
       * Algorithm: developing a step-by-step solution to the problem, or the rules to follow to solve the problem
   - I will be developing the inventory system of the food 
+ 
+ Feb 11 2020:
+    - We learned to solve salesman travel problem
+    - I have conversation with my client and developer
+    - We learned how to encode a string
+    
   
