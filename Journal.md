@@ -4,6 +4,7 @@ Jan 29 2020 (Wednesday):
   - Finding some differences between Python and other programming language.
   
 Feb 5 2020 
+
   - We learned about Computional thinking
     + Show on the development part
       * Decompose: breaking down a complex problem or system into smaller, more manageable parts
@@ -13,8 +14,9 @@ Feb 5 2020
   - I will be developing the inventory system of the food 
  
  Feb 11 2020:
-    - We learned to solve salesman travel problem
-    - I have conversation with my client and developer
-    - We learned how to encode a string
+ 
+   - We learned to solve salesman travel problem
+   - I have conversation with my client and developer
+   - We learned how to encode a string
     
   
