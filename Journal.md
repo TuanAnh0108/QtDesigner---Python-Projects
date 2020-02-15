@@ -18,5 +18,12 @@ Feb 5 2020
    - We learned to solve salesman travel problem
    - I have conversation with my client and developer
    - We learned how to encode a string
-    
+Feb 13 2020
   
+  - We find who is the winner between cheetah and Bolt
+  - We did the register, login system
+  
+Feb 15 2020
+  
+  - We learn and practice with the lambda and string in python
+  - We learn one more way to print variables.
