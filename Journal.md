@@ -27,3 +27,9 @@ Feb 15 2020
   
   - We learn and practice with the lambda and string in python
   - We learn one more way to print variables.
+  
+Feb 17 2020
+  
+  - I made the success criteria for the client
+  - Had a meeting the user to talk about the criteria and their feedbac
+  
