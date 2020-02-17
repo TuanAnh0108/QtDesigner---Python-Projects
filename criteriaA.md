@@ -6,11 +6,11 @@
   
   ### Criteria
   
-  ① The food can be created and stored in the database
+  ① The program has the log in, security system that only the user can access
   
   ② The food properties, information such as name, experation date, money spend on that food can be edited
   
-  ③ The program has the log in, security system that only the user can access
+  ③ The food information can be stored in the database
   
   ④ The food can be deleted from the database
   
