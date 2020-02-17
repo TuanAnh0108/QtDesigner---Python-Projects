@@ -10,4 +10,6 @@
   6. A basic backup functionallity is available
   7. A finding function helping user to easily find the food information
   8. A summary (total food, average food consumed) 
+  9. money
+  10. 
   
