@@ -1,5 +1,6 @@
   ### Definition of Problem
-  
+     
+   I am developing a food management system for Mr. Ignijic. He is a client, seeing as he has quite a lot of food due to he goes to supermarket every week. Moreover, his foods somtimes is steal by some people in his house. From this, he wants to have a system that can keep track of his food.  
   
   ### Proposed solution
   
