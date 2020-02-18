@@ -23,8 +23,13 @@ print(average)
 
 #WaveFunction 
 
-x = [i for i in range(-10, 10)]
-y = [14 * math.sin(0.5 * i) for i in x ]
+x = []
+y = []
+min = -10
+
+for i in range(2000):
+    x.append(min + 0.01*(i+1))
+    y.append(14 * math.sin(0.5 * i))
 
 pyplot.plot(x, y)
 pyplot.xlabel('x')
