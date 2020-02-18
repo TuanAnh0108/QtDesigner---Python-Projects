@@ -1,9 +1,10 @@
   ### Definition of Problem
      
-   I am developing a food management system for Mr. Ignijic. He is a client, seeing as he has quite a lot of food due to he goes to supermarket every week. Moreover, his foods somtimes is steal by some people in his house. From this, he wants to have a system that can keep track of his food.  
+   I am developing a food management system for Mr. Ignijic. He is a client, seeing as he has quite a lot of food due to he goes to supermarket every week. Moreover, his foods somtimes is steal by some people in his house. From this, he usually uses papers to write down what he has but sometimes he does not carefully stored it so it is lost or he needs to spend much time to find where it is. Also, when he want to change the information about the food like the quantity, experation day, he needs to rewrite everything. This inconvenience makes him feel uncomfortable and waste his time. Moreover, because he goes to supermarket ever week, so he has such a large amount of food, so he has to write a lot, uses many papers and he usually has to empty his storage. Through this, I help him to develop a food management system to keep track of his food.
   
   ### Proposed solution
   
+  The food management system is feasible to make. I decided to use 
   
   ### Criteria
   
