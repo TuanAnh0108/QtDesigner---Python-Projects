@@ -31,5 +31,10 @@ Feb 15 2020
 Feb 17 2020
   
   - I made the success criteria for the client
-  - Had a meeting the user to talk about the criteria and their feedbac
+  - Had a meeting the user to talk about the criteria and their feedback
+
+Feb 19 2020
+
+  - We did the presentation about sofware, input output of each jobs
+  - We made a program for bank account with function Deposit, Withdrawal and checkBalance
   
