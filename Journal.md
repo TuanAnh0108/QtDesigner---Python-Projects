@@ -3,7 +3,7 @@
   - We learn basic Python concept
   - Finding some differences between Python and other programming language.
   
-**Feb 5 2020 (Wednesday) **
+**Feb 5 2020 (Wednesday):**
 
   - We learned about Computional thinking
     + Show on the development part
