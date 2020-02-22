@@ -9,20 +9,3 @@ This table reflects the five stages of design: Planining, design, development, t
 |3|**Planning:** Meet with client to talk about criteria for succes|CFS that workds best for client|10 mins|Come up with the client about the CFS. A record of the interview can see on the Appendix|A|
 
 
-Questions:
-
- - What type of food do you have?
- 
- - How many food do you have?
- 
- - What is the problem with your food? Why do you need us?
- 
- - What is your requirement?
- 
- 
-Basic requirement:
-
-    - 
-
-    -
-
