@@ -1,3 +1,4 @@
+```.py
 class Pets:
     dogs = []
 
@@ -75,3 +76,6 @@ else:
     print('My dogs are not hungry')
 
 my_pets.walk()
+```
+
+![SystemDiagram](FirstOOP.png)
