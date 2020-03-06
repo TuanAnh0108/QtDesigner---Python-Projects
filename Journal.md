@@ -38,3 +38,22 @@
   - We did the presentation about sofware, input output of each jobs
   - We made a program for bank account with function Deposit, Withdrawal and checkBalance
   
+ **Feb 24 2020
+ 
+   -
+   - 
+ 
+ **Feb 26 2020**:
+   
+   - 
+   -
+   
+ **March 2nd 2020:**
+ 
+  - 
+  -
+  
+ **March 6th 2020:**
+ 
+ -
+ -
