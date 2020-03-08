@@ -55,5 +55,5 @@
   
  **March 6th 2020:**
  
- -
- -
+ - We finished the Coding game, desgining the interface for the client
+
