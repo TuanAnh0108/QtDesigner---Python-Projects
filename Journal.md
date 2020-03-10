@@ -40,20 +40,35 @@
   
  **Feb 24 2020
  
-   -
-   - 
+   - We learned about OOP (Object-Oriented Programming): What is its role in prorgamming, how is it interaction
+   - We also worked on basic OOP coding examples
+   - Through this, we learned more about class and object (or instances)
+   - We finished the maxima graph in the class
  
  **Feb 26 2020**:
    
-   - 
-   -
+   - We created basic UI "bitcoin converter" by starting learning Qt Designer
+   - We also learned about how to convert file from ui to py
+   
+   Question I have: How does the code inside the py work after converting?. It looks quite complicated
    
  **March 2nd 2020:**
  
-  - 
-  -
+  - We met with our client to have feedback from them about the design of the application 
+  - We learned more about how to show the program by coding inside the py file
+  
+  Question I have: How to open the new window when clicking on the buttons
   
  **March 6th 2020:**
  
  - We finished the Coding game, desgining the interface for the client
+ - Also, I update my github and journal
+ 
+ **March 9th 2020:**
+ 
+ - We started to make the mainfileApp.py for the Application
+ - We learned about how to code the push button inside the py file
+ - Also, the "import format rc", which is used for importing pictures
+ - We also learned about non-modal, window modal and application in Qt Designer
+ - We learned about how to open the new window after clicking on the button
 
