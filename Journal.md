@@ -71,4 +71,9 @@
  - Also, the "import format rc", which is used for importing pictures
  - We also learned about non-modal, window modal and application in Qt Designer
  - We learned about how to open the new window after clicking on the button
-
+ 
+ **March 11 2020:**
+ 
+ - We started the class with exploring how the code of "There is no spoon episode 1" works
+ - We continue to develop our app 
+ - We learned about the criteria C
