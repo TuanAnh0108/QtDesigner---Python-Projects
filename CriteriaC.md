@@ -71,7 +71,7 @@ app.exec_()
 ```
 
 
-### 3. Hash a password
+### 4. Hash a password
 ```.py
 import hashlib
 import os
@@ -81,4 +81,4 @@ salt = os.urandom(32)
 
 key = hashlib.pbkdf2_hmac('sha256', password.encode('utf-8'),salt,1000) #encode the password with the hashlib library
 ```
-### 4.
+### 5.
