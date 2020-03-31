@@ -218,7 +218,7 @@ def editf(self):
                 elif self.comboBox.currentText() == "Location":
                     words[1] = self.lineEdit_3.text()
                 elif self.comboBox.currentText() == "Quantity":
-                    if self.lineEdit_3.text().isdecimal():
+                    if self.lineEdit_3.text().isdecimal(): #Check if the input value is number or not
                         words[2] = self.lineEdit_3.text()
                     else:
                         self.lineEdit_3.setText("Invalid value!")
