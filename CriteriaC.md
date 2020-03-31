@@ -189,3 +189,62 @@ def deletef(self):
     f.writelines(output)    #Write the output list to the Database file
     f.close()
 ```
+### 9. Edit Window
+```.py
+def __init__(self, parent=None):
+    super(edit, self).__init__(parent)
+    self.setupUi(self)
+    self.lineEdit.setPlaceholderText("The name of food: ")
+    self.lineEdit_3.setPlaceholderText("New information: ")
+
+    self.pushButton_2.clicked.connect(self.exit_editf)
+    self.pushButton.clicked.connect(self.editf)
+
+def exit_editf(self):
+    self.close()
+
+def editf(self):
+    words = []
+    output = []
+    with open("DataBase/NewFoodData.txt", "r") as database:       #Open the database text file
+        for line in database:                                     #loop through all the lines in the text file
+            if self.lineEdit.text() in line:                      #If found the Name Of the Food in the line, choose that line
+                for word in line.split():                         #Split that line into elements of a list
+                    words.append(word)
+                for i in range(4):    #To have space for Date last used, Amount last used (Add food does not add these two)
+                    words.append(" ")
+                if self.comboBox.currentText() == "Name":  #Check which item did the user choose, and assign appropriate value 
+                    words[0] = self.lineEdit_3.text()      # to the item.
+                elif self.comboBox.currentText() == "Location":
+                    words[1] = self.lineEdit_3.text()
+                elif self.comboBox.currentText() == "Quantity":
+                    if self.lineEdit_3.text().isdecimal():
+                        words[2] = self.lineEdit_3.text()
+                    else:
+                        self.lineEdit_3.setText("Invalid value!")
+                elif self.comboBox.currentText() == "Expiration":
+                    words[3] = self.lineEdit_3.text()
+                elif self.comboBox.currentText() == "Price":
+                    if self.lineEdit_3.text().isdecimal():
+                        words[4] = self.lineEdit_3.text()
+                    else:
+                        self.lineEdit_3.setText("Invalid value!")
+                elif self.comboBox.currentText() == "Date last used":
+                    words[5] = self.lineEdit_3.text()
+                elif self.comboBox.currentText() == "Amount last used":
+                    if self.lineEdit_3.text().isdecimal():
+                        words[6] = self.lineEdit_3.text()
+                    else:
+                        self.lineEdit_3.setText("Invalid value!")
+
+            if not line.startswith(self.lineEdit.text()):
+                output.append(line)
+    database.close()
+
+    with open("DataBase/NewFoodData.txt", "w") as outfile:
+        print(words)
+        outfile.writelines(output)   #Delete the line contain the Name of the food
+        print("\n")
+        for str in words:             #Print the new line with new information
+            outfile.write(str + " ")
+```
