@@ -1,4 +1,6 @@
 **Q1. Outline one usability issue associated with the design of mobile devices.**
+  
+    Most of the mobile devices today are designed with a round corner, which is easier to hold but also easier to drop. Through this the thief can easily take the phone when having a phone call outside. Having crack on the phone because of dropping is inevitable. Moreover, it also costs users for accessories because of these aboved reasons.
 
 **Q2. Construct a truth table for the following Boolean expression.**
 
@@ -19,7 +21,7 @@
     
 **Q4. Outline the role of the memory data register in the machine execution cycle.**
 
-  
+    Memory data register holds information (either program words or data words) that is in the process of being transferred from the memory to the central processor, or vice versa.
 
 **Q5. A code for representing colours is used, where each colour is stored using 7 bits. State the number of different colours that can be represented.**
 
