@@ -118,7 +118,7 @@ class Home(QMainWindow, mainW):  # this is the main parent, and as such, it take
         editF = edit(self)
         editF.show()
 ```
-### 6. Log in Window
+### 6. Log in 
 ```.py
 def __init__(self, parent=None):
     super(log_in, self).__init__(parent)
@@ -141,7 +141,7 @@ def enterApp(self):
         self.lineEdit.setText("")
         self.lineEdit_2.setText("")
 ```
-### 7. Add Window
+### 7. Add new food
 ```.py
 def __init__(self, parent=None):
     super(Add, self).__init__(parent)
@@ -168,7 +168,7 @@ def addf(self):
         out_file_add.write(StringExpiration)
         out_file_add.write(StringPrice)
 ```
-### 8. Delete window
+### 8. Delete the food
 ```.py
 def __init__(self, parent=None):
     super(delete, self).__init__(parent)
@@ -189,7 +189,7 @@ def deletef(self):
     f.writelines(output)    #Write the output list to the Database file
     f.close()
 ```
-### 9. Edit Window
+### 9. Edit the food's information
 ```.py
 def __init__(self, parent=None):
     super(edit, self).__init__(parent)
@@ -247,4 +247,33 @@ def editf(self):
         print("\n")
         for str in words:             #Print the new line with new information
             outfile.write(str + " ")
+```
+### 11.Summary 
+```.py
+
+def summarize(self):
+    quantity = 0
+    money = 0
+    amount_used = 0
+    list_data = []
+    with open("DataBase/NewFoodData.txt", "r") as data:   # Open the data file
+        words = []
+        for line in data:
+            for word in line.split():
+                words.append(word)  
+        if self.comboBox.currentText() == "Quantity":
+            for i in range(2, len(words), 7):           # Get the values of quantity in the list
+                quantity = quantity + int(words[i])     # Calculate the quantity
+                self.label_2.setText("Result: {}".format(quantity))     # Print out the result
+        elif self.comboBox.currentText() == "Amount used":
+            for i in range(6, len(words), 7):
+                if words[i] == "None":
+                    words[i] = 0
+                amount_used = amount_used + int(words[i])
+                print(amount_used)
+                self.label_2.setText("Result: {}".format(amount_used))
+        else:
+            for i in range(4, len(words), 7):
+                money = money + int(words[i])
+                self.label_2.setText("Result: {}".format(money))
 ```
