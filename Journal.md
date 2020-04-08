@@ -77,3 +77,8 @@
  - We started the class with exploring how the code of "There is no spoon episode 1" works
  - We continue to develop our app 
  - We learned about the criteria C
+ 
+ **March 31 2020**
+ 
+ - We started out first online lesson about reading database and csv file in python
+ - We practice Python exercises about learned syntax and class to revise 
