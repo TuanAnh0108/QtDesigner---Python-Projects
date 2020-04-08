@@ -248,6 +248,8 @@ def editf(self):
         for str in words:             #Print the new line with new information
             outfile.write(str + " ")
 ```
+### 10. Load the food information to the QWidgetTable
+
 ### 11.Summary 
 ```.py
 
