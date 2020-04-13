@@ -82,3 +82,18 @@
  
  - We started out first online lesson about reading database and csv file in python
  - We practice Python exercises about learned syntax and class to revise 
+ 
+ **April 12 2020**
+ 
+ - I finished the Sl homework practicing Python
+ - Also, I finished making the scatter plot containing two lines: one for gold price and one for total virus cases
+ 
+ **The question I have**: What is correlation coefficient? And how to calculate it in Python
+ 
+ **April 13 2020**
+ 
+ - I had a meeting with my teacher talking about the process of computer science work
+ - I searched on Internet and found out about correlation coefficient and finished the work
+ 
+ 
+ 
