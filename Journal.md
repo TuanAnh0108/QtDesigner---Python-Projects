@@ -95,5 +95,8 @@
  - I had a meeting with my teacher talking about the process of computer science work
  - I searched on Internet and found out about correlation coefficient and finished the work
  
+ **April 15 2020**
+ 
+ - I finish the List of Food windows
  
  
