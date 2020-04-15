@@ -250,6 +250,26 @@ def editf(self):
 ```
 ### 10. Load the food information to the QWidgetTable
 
+```.
+class list_food(List_food):
+    def __init__(self, parent=None):
+        super(list_food, self).__init__(parent)
+        self.setupUi(self)
+        self.data = self.load_data()
+        self.pushButton.clicked.connect(self.exit_listf)   # Connect the button to function
+
+    def load_data(self):
+        with open("DataBase/NewFoodData.csv") as mydatabase:   # Open the file 
+            file = csv.reader(mydatabase, delimiter=",")    # Split the data by the ","
+            for i, row in enumerate(file):           
+                for j, col in enumerate(row):
+                    self.tableWidget.setItem(i, j, QTableWidgetItem(col)) # Set the data to the table
+
+        return []
+
+    def exit_listf(self):   # close the dialog
+        self.close()
+```
 ### 11.Summary 
 ```.py
 
