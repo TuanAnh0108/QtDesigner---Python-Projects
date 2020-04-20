@@ -18,7 +18,10 @@ class Bicycle:
         self.size = "M"
 
         self.number_of_bicycle = self.number_of_bicycle + 1
-
+        
+    def showNumber(self):
+        print(self.number_of_bicycle)
+    
     def post_initialize(self):
         return self.size * int(math.pi)
 
@@ -39,5 +42,8 @@ class MountainBike(Bicycle):
         self.rear_shock = 80
 
         self.number_of_Mbike = self.number_of_Mbike + 1
+        
+     def showNumber_MB(self):
+         print(self.number_of_Mbike)
 
 ```
