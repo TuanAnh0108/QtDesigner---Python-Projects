@@ -183,7 +183,8 @@ def deletef(self):
     output = []                               
     string = self.lineEdit.text()
     for line in f:
-        if not line.startswith(string):  #if the line not startwith the String Input, append it to the output list => The name             output.append(line)                 deleted will no longer in the list
+        if not line.startswith(string):  #if the line not startwith the String Input, append it to the output list => The name                                          # deleted will no longer in the list
+        output.append(line)                                  
     f.close()                  
     f = open(fn, "w")         
     f.writelines(output)    #Write the output list to the Database file
