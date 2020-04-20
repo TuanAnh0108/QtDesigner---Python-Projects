@@ -34,6 +34,13 @@
   
   **Fig8.** The edit window will allow the user to edit the information of the food in the table of food
   
+  ![SystemDiagram](Add_flowchart.png)
+  
+  **Fig9.** This is the flowchart showing how the add window works
+  
+  ![SystemDiagram](Delete_flowchart.png)
+  
+  **Fig10.** This is the flow chart showing how the delete window works
   
   
   
