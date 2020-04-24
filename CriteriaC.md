@@ -155,14 +155,14 @@ def __init__(self, parent=None):
     self.buttonBox.accepted.connect(self.addf)
 
 def addf(self):
-    with open("Database/NewFoodData.txt", "a") as out_file_add:   #open the Database text file
-        StringName = self.lineEdit.text() + " "                   #Assign the input value 
+    with open("Database/NewFoodData.csv", "a") as out_file_add:  # open the Database text file
+        StringName = self.lineEdit.text() + ","  # Assign the input value
         StringLocation = self.lineEdit_2.text() + " "
         StringQuantity = self.lineEdit_3.text() + " "
         StringExpiration = self.lineEdit_4.text() + " "
-        StringPrice = self.lineEdit_5.text() + "\n"
+        StringPrice = self.lineEdit_5.text() + " None" + " None" + "\n"
 
-        out_file_add.write(StringName)                          #Write the Input value to the Database text file
+        out_file_add.write(StringName)  # Write the Input value to the Database text file
         out_file_add.write(StringLocation)
         out_file_add.write(StringQuantity)
         out_file_add.write(StringExpiration)
@@ -207,19 +207,21 @@ def exit_editf(self):
 def editf(self):
     words = []
     output = []
-    with open("DataBase/NewFoodData.txt", "r") as database:       #Open the database text file
-        for line in database:                                     #loop through all the lines in the text file
-            if self.lineEdit.text() in line:                      #If found the Name Of the Food in the line, choose that line
-                for word in line.split():                         #Split that line into elements of a list
+    output_2 = []
+    with open("DataBase/NewFoodData.csv", "r") as database:  # Open the database text file
+        for line in database:  # loop through all the lines in the text file
+            if self.lineEdit.text() in line:  # If found the Name Of the Food in the line, choose that line
+                for word in line.split():  # Split that line into elements of a list
                     words.append(word)
-                for i in range(4):    #To have space for Date last used, Amount last used (Add food does not add these two)
+                for i in range(
+                        4):  # To have space for Date last used, Amount last used (Add food does not add these two)
                     words.append(" ")
-                if self.comboBox.currentText() == "Name":  #Check which item did the user choose, and assign appropriate value 
-                    words[0] = self.lineEdit_3.text()      # to the item.
+                if self.comboBox.currentText() == "Name":  # Check which item did the user choose, and assign appropriate value
+                    words[0] = self.lineEdit_3.text()  # to the item.
                 elif self.comboBox.currentText() == "Location":
                     words[1] = self.lineEdit_3.text()
                 elif self.comboBox.currentText() == "Quantity":
-                    if self.lineEdit_3.text().isdecimal(): #Check if the input value is number or not
+                    if self.lineEdit_3.text().isdecimal():  # Check if the input value is number or not
                         words[2] = self.lineEdit_3.text()
                     else:
                         self.lineEdit_3.setText("Invalid value!")
@@ -242,11 +244,10 @@ def editf(self):
                 output.append(line)
     database.close()
 
-    with open("DataBase/NewFoodData.txt", "w") as outfile:
-        print(words)
-        outfile.writelines(output)   #Delete the line contain the Name of the food
+    with open("DataBase/NewFoodData.csv", "w") as outfile:
+        outfile.writelines(output)  # Delete the line contain the Name of the food
         print("\n")
-        for str in words:             #Print the new line with new information
+        for str in words:  # Print the new line with new information
             outfile.write(str + " ")
 ```
 ### 10. Load the food information to the QWidgetTable
@@ -273,21 +274,27 @@ class list_food(List_food):
 ```
 ### 11.Summary 
 ```.py
+def __init__(self, parent=None):
+    super(summary, self).__init__(parent)
+    self.setupUi(self)
+    self.lineEdit.setPlaceholderText("Properties Summary: ")
+
+    self.pushButton.clicked.connect(self.summarize)
 
 def summarize(self):
     quantity = 0
     money = 0
     amount_used = 0
-    list_data = []
-    with open("DataBase/NewFoodData.txt", "r") as data:   # Open the data file
+    with open("DataBase/NewFoodData.csv", "r") as data:  # Open the data file
         words = []
-        for line in data:
-            for word in line.split():
-                words.append(word)  
+        file = csv.reader(data, delimiter=",")
+        for row in file:
+            for col in row:
+                words.append(col)
         if self.comboBox.currentText() == "Quantity":
-            for i in range(2, len(words), 7):           # Get the values of quantity in the list
-                quantity = quantity + int(words[i])     # Calculate the quantity
-                self.label_2.setText("Result: {}".format(quantity))     # Print out the result
+            for i in range(2, len(words), 7):  # Get the values of quantity in the list
+                quantity = quantity + int(words[i])  # Calculate the quantity
+                self.label_2.setText("Result: {}".format(quantity))  # Print out the result
         elif self.comboBox.currentText() == "Amount used":
             for i in range(6, len(words), 7):
                 if words[i] == "None":
