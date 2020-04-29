@@ -38,13 +38,20 @@
   
   **Fig9.** The edit window will allow the user to edit the information of the food in the table of food
   
+  
+  ![SystemDiagram](SearchFood.png)
+  
+  **Fig10.** The search window will allow the user to find the information of the food in the database file. The information of the food will be shown in the table.
+  
+  
   ![SystemDiagram](Add_flowchart.png)
   
-  **Fig10.** This is the flowchart showing how the add window works
+  **Fig11.** This is the flowchart showing how the add window works
+  
   
   ![SystemDiagram](Delete_flowchart.png)
   
-  **Fig11.** This is the flow chart showing how the delete window works
+  **Fig12.** This is the flow chart showing how the delete window works
   
   
   
