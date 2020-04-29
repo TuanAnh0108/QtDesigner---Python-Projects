@@ -307,3 +307,33 @@ def summarize(self):
                 money = money + int(words[i])
                 self.label_2.setText("Result: {}".format(money))
 ```
+### 12.Search Food
+```.py
+class search_food(Search):
+    def __init__(self, parent=None):
+        super(search_food, self).__init__(parent)
+        self.setupUi(self)
+        self.pushButton.clicked.connect(self.Search)
+
+    def Search(self):
+
+        with open("DataBase/NewFoodData.csv", "r") as data:  # Open the data file
+            output = []
+            for line in data:
+                if line.startswith(self.lineEdit.text()):    #Check if the food is on the list
+                    output.append(line)                 #Append the information of food to the list
+                    self.lineEdit_3.setText("The information for the food is below:")
+                else:                     
+                    self.lineEdit_3.setText("The food is not on the list")
+
+        data.close()
+        with open("DataBase/SearchFoodData.csv", "w") as NF_data:    
+            for str in output:             #Write the information of the food into a Search Food Data file
+                NF_data.write(str)
+        NF_data.close()
+        with open("DataBase/SearchFoodData.csv") as mydatabase:          
+            file = csv.reader(mydatabase, delimiter=" ")
+            for i, row in enumerate(file):    #Showing the data from the csv file to the table
+                for j, col in enumerate(row):
+                    self.tableWidget.setItem(i, j, QTableWidgetItem(col))
+```
