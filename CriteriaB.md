@@ -53,6 +53,7 @@
   
   **Fig12.** This is the flow chart showing how the delete window works
   
+  
   ### Expected input and output
   
   #|Function|INPUT|OUTPUT
@@ -62,6 +63,10 @@
 3| SUMMARY | Properties needed to summarize | The total amount of the inputted properties
 4| SEARCH FOOD | The name of the food | All the properties of the food will be shown in a table
 5| DELETE FOOD | The name of the food | All the properties of the food included name of the food will be deleted from the database file and also the food data table
+
+  ### Testing plan
+  
+  Due to the output data can be shown after using the functions, so that we can test the program by using using the program and look at the place where the output will be. This can be done right after finishing the code and by the user in the progress of using the program.
 
   
   
