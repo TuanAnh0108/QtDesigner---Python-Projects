@@ -118,7 +118,9 @@ class Home(QMainWindow, mainW):  # this is the main parent, and as such, it take
         editF = edit(self)
         editF.show()
 ```
-### 6. Log in 
+### 6. Log in
+Due to the user would like to be the exclusive user for this app so that the username and the password do not need to change. Hence, I will just check if the username and password input is mathched with the set username and password.
+
 ```.py
 def __init__(self, parent=None):
     super(log_in, self).__init__(parent)
@@ -142,6 +144,8 @@ def enterApp(self):
         self.lineEdit_2.setText("")
 ```
 ### 7. Add new food
+The user wants to add the new food's properties: Name, Location, Quantity, Expiration and Price. Hence, writing the data input into database text file to help the user keep track of it. I also leave two "None" ones for the Day last used and amount last used due to when people add new food, the food has not been used yet so that these two information is not necessary to fill out in the add section and can be edited in the edit section.
+
 ```.py
 def __init__(self, parent=None):
     super(Add, self).__init__(parent)
@@ -169,6 +173,8 @@ def addf(self):
         out_file_add.write(StringPrice)
 ```
 ### 8. Delete the food
+These codes will help user delete the information of the input food name. It will delete every information that are related to the food. The code will delete the information in the database file and also in the data table.
+
 ```.py
 def __init__(self, parent=None):
     super(delete, self).__init__(parent)
@@ -191,6 +197,8 @@ def deletef(self):
     f.close()
 ```
 ### 9. Edit the food's information
+The user wants to edit the information of the food in case of wrongly typing, or some information changed. So, the user will input the name of the food and choose the properties they want to change. The data in the database will be updated right after the button is clicked and also the data table.
+
 ```.py
 def __init__(self, parent=None):
     super(edit, self).__init__(parent)
@@ -251,6 +259,7 @@ def editf(self):
             outfile.write(str + " ")
 ```
 ### 10. Load the food information to the QWidgetTable
+The food data table will help the user to keep track of all the food he has. He will know all the name of the food he has and the properties related to them.
 
 ```.
 class list_food(List_food):
@@ -273,6 +282,8 @@ class list_food(List_food):
         self.close()
 ```
 ### 11.Summary 
+The summary dialog will summarize the total money,quantity or amount used of all the food he has. By taking the data from the database file, I will take out the information of the properties he chooses to summarize and calculate the sum of them.
+
 ```.py
 def __init__(self, parent=None):
     super(summary, self).__init__(parent)
@@ -308,6 +319,8 @@ def summarize(self):
                 self.label_2.setText("Result: {}".format(money))
 ```
 ### 12.Search Food
+Search Food Dialog will help the user find all the information of the input food. I will take the data of the food in the databse file and print out the food information into a table 
+
 ```.py
 class search_food(Search):
     def __init__(self, parent=None):
