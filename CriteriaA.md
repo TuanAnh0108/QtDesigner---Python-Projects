@@ -10,16 +10,20 @@
   
   ① The program has the log in, security system that only the user can access
   
-  ② The food properties, information such as name, experation date, money spend on that food can be edited
+  ② The new food can be added
   
-  ③ The food information can be stored in the database
+  ③ The food properties, information such as name, experation date, money spend on that food can be edited
   
-  ④ The food can be deleted from the database
+  ④ The food information can be stored in the database
   
-  ⑤ The program has options for user to choose: edit, delete, add
+  ⑤ The food can be deleted 
   
-  ⑥ A basic backup functionallity is available
+  ⑥ A finding function helping user to easily find the food information
   
-  ⑦ A finding function helping user to easily find the food information
+  ⑦ A summary dialog to summerize the quantity, price of the food
   
-  ⑧ A summary (total food, money spended, average food consumed/per week, month) 
+  ⑧ The information of the food is shown in a table
+  
+  ⑨ There is also log out button to help user close the app
+  
+  
