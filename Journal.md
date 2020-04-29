@@ -99,4 +99,12 @@
  
  - I finish the List of Food windows
  
+ **April 22 2020:**
  
+ - I planned the idea for Search Window
+ - I made the dialog windown for Search function
+ 
+ **April 28 2020:
+ 
+ - I finish the code for the Search Window
+ - I recorded the video showing the evidence that the criteria is all met
