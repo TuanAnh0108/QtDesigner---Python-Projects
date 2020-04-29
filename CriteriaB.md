@@ -66,7 +66,7 @@
 
   ### Testing plan
   
-  Due to the output data can be shown after using the functions, so that we can test the program by using using the program and look at the place where the output will be. This can be done right after finishing the code and by the user in the progress of using the program.
+  Due to the output data can be shown after using the functions right in the app, so that we can test the program by using using the program and look at the place where the output will be. This can be done right after finishing the code and by the user in the progress of using the program.
 
   
   
