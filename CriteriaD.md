@@ -5,13 +5,14 @@ The success criteria as detailed in the planning section of this document have a
 |CRITERIA|MET|
 |:---|:---:|
 |The program has the log in, security system that only the user can access|MET|
+|The new food can be added|MET|
 |The food properties, information such as name, experation date, money spend on that food can be edited|MET|
 |The food information can be stored in the database|MET|
-|The food can be deleted from the database|MET|
-|The program has options for user to choose: edit, delete, add|MET|
-|A basic backup functionallity is available|MET|
+|The food can be deleted|MET|
 |A finding function helping user to easily find the food information|MET|
-|A summary (total food, money spended, average food consumed)|MET|
+|A summary dialog to summerize the quantity, price of the food|MET|
+|The information of the food is shown in a table|MET|
+|There is also log out button to help user close the app|MET|
 
 **Fig 1** This table shows how the food management system fulfills the success criteria at the planning section
 
